@@ -43,7 +43,7 @@ class Menu:
     def remover_contato(self):
         os.system('cls' if os.name == 'nt' else 'clear')
 
-        if not self.agenda.listar_contatos():  # Verifica se não há contatos
+        if not self.agenda.listar_contatos():
             print("Nenhum cliente encontrado.")
             input("\nPressione Enter para continuar...")
             return
